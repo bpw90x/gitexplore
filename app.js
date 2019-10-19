@@ -1,5 +1,5 @@
 //Init Github
-const github = new Github
+const github = new Github;
 //init UI
 const ui = new UI;
 
@@ -18,11 +18,11 @@ if(userText !== ''){
  .then(data => {
    if(data.profile.message === 'Not Found'){
       // Show alert
-
+        console.log('no data');
    } else {
       ui.showProfile(data.profile);
    }
-   console.log(data);
+   //console.log(data);
  })
 }  else {
   //clear profile

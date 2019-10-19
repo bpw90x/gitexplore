@@ -5,6 +5,7 @@ class UI {
 
   showProfile(user) {
     console.log(user);
+   
 
   }
 }
