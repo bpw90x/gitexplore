@@ -12,7 +12,7 @@ searchUser.addEventListener('keyup', (e) => {
 const userText = e.target.value;
 
 if(userText !== ''){
- // console.log(userText);
+ 
  // Make http call
  github.getUser(userText)
  .then(data => {
@@ -20,7 +20,9 @@ if(userText !== ''){
       // Show alert
         ui.showAlert('User not found','alert alert-danger')
    } else {
+      //Show Profile
       ui.showProfile(data.profile);
+      ui.showRepos(data.repos);
    }
    //console.log(data);
  })
