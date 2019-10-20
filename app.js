@@ -18,7 +18,7 @@ if(userText !== ''){
  .then(data => {
    if(data.profile.message === 'Not Found'){
       // Show alert
-        console.log('no data');
+        ui.showAlert('User not found','alert alert-danger')
    } else {
       ui.showProfile(data.profile);
    }
@@ -26,6 +26,7 @@ if(userText !== ''){
  })
 }  else {
   //clear profile
+  ui.clearProfile();
 }
 
 });
