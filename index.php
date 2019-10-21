@@ -8,7 +8,7 @@ $darkly = "https://bootswatch.com/4/darkly/bootstrap.min.css";
 $lightly = "https://bootswatch.com/4/litera/bootstrap.min.css";
 $css = '';
 
-$builder = (new LaunchDarkly\LDUserBuilder("brian@lucidswitch.com"))
+$builder = (new LaunchDarkly\LDUserBuilder("bpw90x@gmail.com"))
   ->firstName("Brian")
   ->lastName("Walsh")
   ->custom(["groups" => "beta_testers"]);
